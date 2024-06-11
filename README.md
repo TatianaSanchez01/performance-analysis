@@ -97,9 +97,39 @@ Pyinstrument offers various profiling options and visualizations. Refer to its d
 9. The Summary Report listener displays overall statistics like response times, throughput, and error rates.
 10. Other listeners may provide more granular data for further analysis.
 
-### Additional Considerations
+### New Relic Setup and Monitoring
 
-* Tailoring the Process: Adapt these steps to your specific applications and profiling requirements.
-* Data Collection and Analysis: Plan how you will collect and analyze profiling data to pinpoint performance bottlenecks. Tools like cProfile, Pyinstrument, and JMeter provide different data formats and analysis capabilities.
-* Iterative Optimization: Address identified bottlenecks in your code and repeat the profiling process to measure the impact of your optimizations.
-* Best Practices: Consider best practices for code optimization and performance tuning in Python and Java. Many resources are available online and in programming books.
+#### Install New Relic Agent
+
+1. Select the Operating System
+
+* Log in to your New Relic account.
+* Navigate to the "Add more data" section.
+* Select your operating system from the provided options.
+
+2. Get the License Key
+
+* New Relic will provide a unique license key for your account. Note this key as it will be needed during installation.
+
+3.Install the New Relic Agent
+
+* New Relic will provide a command specific to your operating system to install the agent. Copy this command.
+* Execute the command in your terminal to install the New Relic agent.
+
+4. Verify Installation
+
+* Once the installation is successful, you can verify it by checking the New Relic dashboard for incoming data.
+
+#### Analyze Data in New Relic
+
+1. Access Logs
+
+* Go to the "Logs" section in the sidebar of the New Relic web interface to analyze the data collected by the agent.
+
+2. Select a Project for Analysis
+
+* You can select a specific project or application from any language supported by New Relic to monitor and analyze performance metrics.
+
+### Disclaimer
+
+This README provides a general overview of the tools and process. Refer to the official documentation for cProfile, Pyinstrument, JMeter, and New Relic for detailed information and advanced features.
